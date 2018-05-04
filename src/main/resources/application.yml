@@ -4,7 +4,7 @@ server:
 spring:
     datasource:
         name: localhost
-        url: jdbc:mysql://localhost:3306/oaup_db?useUnicode=true&characterEncoding=utf8
+        url: jdbc:mysql://116.196.120.224:3306/oaup_db?useUnicode=true&characterEncoding=utf8
         username: user_oaup
         password: ^OAUP2018love$
         # 使用druid数据源

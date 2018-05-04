@@ -42,12 +42,10 @@ public class ProductService implements IProductService {
 
         for (ProductDescription m : productList) {
             if (m.getContentStyle().equals("detail_table")) {
-                log.info(m.getContent());
                 ProductDetailTableBo detailTableBo = JSON.parseObject(m.getContent(), ProductDetailTableBo.class);
                 detailList.add(detailTableBo);
             }
             if (m.getContentStyle().equals("detail_zonghe")) {
-                log.info(m.getContent());
                 ProductDetailCompositiveBo list = JSON.parseObject(m.getContent(), ProductDetailCompositiveBo.class);
                 detailList.add(list);
             }
